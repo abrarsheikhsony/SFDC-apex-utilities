@@ -8,15 +8,14 @@
   <li>DescribeSchemaUtility</li>
 </ul>
 
-<br/>
+<h5>TestDataFactory</h5><p>Data Factory class for All @Test classes</p>
 
-<h5>TestDataFactory</h5><p>Data Factory class for All @Test classes</p> <br/>
+<h5>SampleTest</h5><p>A sample @Test class to call Data Factory class using setupCommonData (@testSetup) method</p>
 
-<h5>SampleTest</h5><p>A sample @Test class to call Data Factory class using setupCommon method</p> <br/>
+<h5>RecordTypeUtility</h5><p>Data Factory class for All @Test classes</p>
 
-<h5>RecordTypeUtility</h5><p>Data Factory class for All @Test classes</p> <br/>
+/********* Test RecordTypeUtility *********/
 
-// Test RecordTypeUtility
 String RECORD_TYPE_BUSINESS_ACCOUNT = 'Business Account';
 
 // Call the method for All record types of SObject
@@ -35,8 +34,9 @@ System.assertEquals(recordTypeId, recordTypeRecord.Id);
 
 <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_class_Schema_RecordTypeInfo.htm" target="_blank" alt="RecordTypeInfo Class">Read more about "RecordTypeInfo Class"</a>
 
+<br/>
 
-<h5>DescribeSchemaUtility</h5><p>Describe Schema call to get:</p> <br/>
+<h5>DescribeSchemaUtility</h5><p>Describe Schema call to get:</p> 
 <ul>
   <li>All your Salesforce org objects</li>
   <li>Specific SObject API Name</li>
@@ -56,11 +56,9 @@ System.assertEquals(recordTypeId, recordTypeRecord.Id);
 <h6>getSObjectAPIName()</h6><p>Get specific Object API Name (e.g. Lead, Account, OpportunityLineItem etc.)</p>
 <a href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_schema.htm" target="_blank" alt="Schema Class">Read more about "Schema Class"</a>
 
-<b>Note:</b>
-// Error: If you pass wrong SObject API Name you will get an error:
-// System.InvalidParameterValueException: Invalid sobject provided. The Schema.describeSObject() methods does not support the Merchandise sobject as a parameter. The sobject provided does not exist.
-
-    
+<b>Note:</b> <br/>
+Error: If you pass wrong SObject API Name you will get an error:
+System.InvalidParameterValueException: Invalid sobject provided. The Schema.describeSObject() methods does not support the Merchandise sobject as a parameter. The sobject provided does not exist.
 
 <h6>getSObjectAllFields()</h6><p>Get all fields of a specific object (e.g. Lead, Account etc.)</p>
 
@@ -68,14 +66,11 @@ System.assertEquals(recordTypeId, recordTypeRecord.Id);
 
 <h6>getFieldLabel()</h6><p>Get Field Label (e.g. Account Number etc.)</p>
 
-
-
-
 <h6>getFieldPicklistValues()</h6><p>Get Picklist values of a specific Field of an Object</p>
 
 <h6>getFieldSetMemebers()</h6><p>Get list of Feild Set members (Field API Name, Field Label, Field Type, Field Required, Field DB Required)</p>
 
-// Test "getFieldSetMemebers"
+/********* Test getFieldSetMemebers method *********/
 List<Schema.FieldSetMember> fieldSetMemberList = DescribeSchemaUtility.getFieldSetMemebers(Account.SobjectType, 'Account_FieldSet');
 // Build a Query for Account records
 String soql = 'SELECT ';
@@ -87,7 +82,3 @@ System.Debug('>>soql<<'+soql);
 
 List<Account> lstAccounts = Database.query(soql); 
 System.Debug('>>lstAccounts<<'+lstAccounts);
-    
-
-
-
