@@ -70,7 +70,7 @@ System.InvalidParameterValueException: Invalid sobject provided. The Schema.desc
 
 <h6>getFieldSetMemebers()</h6><p>Get list of Feild Set members (Field API Name, Field Label, Field Type, Field Required, Field DB Required)</p>
 
-/********* Test getFieldSetMemebers method *********/
+/********* Test getFieldSetMemebers method *********/ <br/>
 List<Schema.FieldSetMember> fieldSetMemberList = DescribeSchemaUtility.getFieldSetMemebers(Account.SobjectType, 'Account_FieldSet');
 // Build a Query for Account records
 String soql = 'SELECT ';
