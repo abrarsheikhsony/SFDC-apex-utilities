@@ -46,7 +46,7 @@ public class TestDataFactory{
     * ******************* Change Log *******************
     * Modified by    Version    Change Date
     ****************************************************************************************/    
-    public static Opportunity createOpportunity(String opptyName, String opptyStage, String recordTypeName, Date soaDealStartDate, Date soaDealEndDate, Account account){
+    public static Opportunity createOpportunity(String opptyName, String opptyStage, String recordTypeName, Account account){
         Opportunity opportunityRecord = new Opportunity();
             opportunityRecord.Name = opptyName;
             opportunityRecord.StageName = opptyStage;
