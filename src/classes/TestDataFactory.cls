@@ -16,7 +16,7 @@ public class TestDataFactory{
     * ******************* Change Log *******************
     * Modified by    Version    Change Date
     ****************************************************************************************/ 
-    public static List<Application_Setting__c> createSOAApplicationCustomSetting(){
+    public static List<Application_Setting__c> createApplicationCustomSetting(){
         // Create a sample .csv file "ApplicationSettingResource" and save it in Static Resource
         List<Application_Setting__c> applicationCustomSetting = Test.loadData(Application_Setting__c.sObjectType, 'ApplicationSettingResource');
         return applicationCustomSetting;
