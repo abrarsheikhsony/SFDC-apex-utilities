@@ -1,5 +1,5 @@
 # SalesforceUtility
-<h3>All Salesforce Utilities (Apex &amp; Visualforce)</h3>
+<h3>All Salesforce Utilities (Apex)</h3>
 
 <ul>
   <li>TestDataFactory</li>
