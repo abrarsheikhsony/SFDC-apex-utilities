@@ -17,7 +17,6 @@
 /********* Test RecordTypeUtility *********/
 
 String RECORD_TYPE_BUSINESS_ACCOUNT = 'Business Account';
-
 // Call the method for All record types of SObject
 RecordTypeUtility.getSObjectAllAvailableRecordTypes(Account.SobjectType);
 
