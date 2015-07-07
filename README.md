@@ -1,5 +1,6 @@
 # SalesforceUtility
-## All Salesforce Utilities (Apex)
+
+### All Salesforce Utilities (Apex)
 
 - TestDataFactory
 - SampleTest
@@ -15,7 +16,7 @@ Data Factory class for All @Test classes
 
 /********* Test RecordTypeUtility *********/
 
-String RECORD_TYPE_BUSINESS_ACCOUNT = 'Business Account';
+        String RECORD_TYPE_BUSINESS_ACCOUNT = 'Business Account';
 
         // Call the method for All record types of SObject
         RecordTypeUtility.getSObjectAllAvailableRecordTypes(Account.SobjectType);
