@@ -19,7 +19,7 @@
 String RECORD_TYPE_BUSINESS_ACCOUNT = 'Business Account';
 
 // Call the method for All record types of SObject
-RecordTypeUtility.getSObjectAllAvailableRecordTypes(Account.SobjectType);
+    RecordTypeUtility.getSObjectAllAvailableRecordTypes(Account.SobjectType);
 
 // Get the Record Type ID
 String recordTypeId = RecordTypeUtility.getRecordTypeId(Account.SobjectType, RECORD_TYPE_BUSINESS_ACCOUNT, DescribeSchemaUtility.getSObjectAPIName('Account'));
