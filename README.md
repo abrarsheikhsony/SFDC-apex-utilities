@@ -79,9 +79,10 @@ List<Schema.FieldSetMember> fieldSetMemberList = DescribeSchemaUtility.getFieldS
 // Build a Query for Account records
 
 String soql = 'SELECT ';
+
 for(Schema.FieldSetMember f : fieldSetMemberList) {
 
-    soql += f.getFieldPath() + ', ';
+  soql += f.getFieldPath() + ', ';
 
 }
 
