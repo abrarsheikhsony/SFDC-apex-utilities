@@ -80,7 +80,9 @@ List<Schema.FieldSetMember> fieldSetMemberList = DescribeSchemaUtility.getFieldS
 
 String soql = 'SELECT ';
 for(Schema.FieldSetMember f : fieldSetMemberList) {
+
     soql += f.getFieldPath() + ', ';
+
 }
 
 soql += 'Id FROM Account Order By Name';
