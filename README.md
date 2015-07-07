@@ -1,14 +1,13 @@
 # SalesforceUtility
-<h3>All Salesforce Utilities (Apex)</h3>
+## All Salesforce Utilities (Apex)
 
-<ul>
-  <li>TestDataFactory</li>
-  <li>SampleTest</li>
-  <li>RecordTypeUtility</li>
-  <li>DescribeSchemaUtility</li>
-</ul>
+- TestDataFactory
+- SampleTest
+- RecordTypeUtility
+- DescribeSchemaUtility
 
-<h5>TestDataFactory</h5><p>Data Factory class for All @Test classes</p>
+#### TestDataFactory
+Data Factory class for All @Test classes
 
 <h5>SampleTest</h5><p>A sample @Test class to call Data Factory class using setupCommonData (@testSetup) method</p>
 
