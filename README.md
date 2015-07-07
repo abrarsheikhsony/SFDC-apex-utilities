@@ -25,6 +25,7 @@ RecordTypeUtility.getSObjectAllAvailableRecordTypes(Account.SobjectType);
 String recordTypeId = RecordTypeUtility.getRecordTypeId(Account.SobjectType, RECORD_TYPE_BUSINESS_ACCOUNT, DescribeSchemaUtility.getSObjectAPIName('Account'));
 
 // Get the Record Type Name
+
 String recordTypeName = RecordTypeUtility.getRecordTypeName(Account.SobjectType, recordTypeId, DescribeSchemaUtility.getSObjectAPIName('Account'));
 
 // Verify / Assert Record Type Name and ID
